@@ -1,3 +1,5 @@
+// convert arr to ll 
+
 #include<bits/stdc++.h>
 
 using namespace std;
@@ -33,19 +35,14 @@ Node* converArr2LL(vector<int> &arr)
 
 int main ()
 {
-  vector<int> arr = {2, 2, 1, 1, 1, 2, 2, 3, 3};
+  vector<int> arr = {2, 2, 1, 1, 1, 2, 2};
 
     Node* head = converArr2LL(arr);
-    cout<<head->data;
-}
-
-
-
-int main ()
-{
-  vector<int> arr = {2, 2, 1, 1, 1, 2, 2, 3, 3};
-
-    Node* y = new Node (arr[0] , nullptr);
-    Node* head = converArr2LL(arr);
-    cout<<head->data;
+    
+    Node* temp = head;
+    while(temp)
+    {
+        cout<<temp->data<<" ";
+        temp = temp->next;
+    }
 }
