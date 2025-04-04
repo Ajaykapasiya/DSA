@@ -17,7 +17,7 @@ int sumByD(vector<int> &arr  , int div){
 
 int smallestDivisor(vector<int> &arr , int limit){
     int n = arr.size();
-    if(n > limt )return -1;
+    if(n > limit )return -1;
 
     int low = 1;
     int high = *max_element(arr.begin() , arr.end());
